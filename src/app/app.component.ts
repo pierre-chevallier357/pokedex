@@ -9,7 +9,7 @@ import { Pokemon } from './pokemon';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  private pokemons: Pokemon[] = [];
+  pokemons: Pokemon[] = [];
 
   ngOnInit() {
     this.pokemons = POKEMONS;
