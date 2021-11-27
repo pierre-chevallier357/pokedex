@@ -9,7 +9,7 @@
     },
 
     map: {
-      app: 'dist',
+      app: 'app',
       '@angular/core': 'npm:@angular/core@8.0.0/bundles/core.umd.min.js',
       '@angular/common': 'npm:@angular/common@8.0.0/bundles/common.umd.min.js',
       '@angular/compiler': 'npm:@angular/compiler@8.0.0/bundles/compiler.umd.min.js',

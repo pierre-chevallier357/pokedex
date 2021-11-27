@@ -1,13 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Pokedex</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pokedex</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('main.js').catch(function (err) {
+        console.error(err);
+      });
+    </script>
+  </head>
+  <body>
+    <pokedex-app></pokedex-app>
+  </body>
 </html>
