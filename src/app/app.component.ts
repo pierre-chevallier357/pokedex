@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { POKEMONS } from './mock-pokemons';
-import { Pokemon } from './pokemon';
+import { POKEMONS } from './models/mock-pokemons';
+import { Pokemon } from './models/pokemon';
 
 @Component({
   selector: 'pokedex-app',

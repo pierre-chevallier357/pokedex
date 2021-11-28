@@ -10,7 +10,7 @@
           <div class="card-content">
             <p>{{ pokemon.name }}</p>
             <p>
-              <small>{{ pokemon.creationDate }}</small>
+              <small>{{ pokemon.creationDate | date: 'dd/MM/yyyy' }}</small>
             </p>
           </div>
         </div>
