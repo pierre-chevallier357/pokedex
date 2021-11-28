@@ -1,4 +1,4 @@
-import { Pokemon } from 'src/app/models/pokemon/pokemon';
+import { Pokemon } from 'src/app/pokemon/models/pokemon/pokemon';
 
 export const POKEMONS: Pokemon[] = [
   {
