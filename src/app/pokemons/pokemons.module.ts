@@ -1,3 +1,4 @@
+import { PokemonsService } from './services/pokemons/pokemons.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -10,5 +11,6 @@ import { PokemonRoutingModule } from './pokemons-routing.module';
 @NgModule({
   declarations: [BorderCardDirective, PokemonTypeColorPipe, PokemonDetailsComponent, PokemonListComponent],
   imports: [CommonModule, PokemonRoutingModule],
+  providers: [PokemonsService],
 })
 export class PokemonModule {}
