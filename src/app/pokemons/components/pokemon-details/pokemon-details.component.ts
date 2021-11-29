@@ -22,4 +22,9 @@ export class PokemonDetailsComponent implements OnInit {
   goBack(): void {
     this.router.navigate(['']);
   }
+
+  editPokemon(pokemon: Pokemon): void {
+    let url = ['/pokemons/edit', pokemon.id];
+    this.router.navigate(url);
+  }
 }

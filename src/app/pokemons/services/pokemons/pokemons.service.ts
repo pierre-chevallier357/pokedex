@@ -17,4 +17,8 @@ export class PokemonsService {
   getPokemons(): Pokemon[] {
     return POKEMONS;
   }
+
+  getPokemonTypes(): string[] {
+    return ['Plante', 'Feu', 'Eau', 'Insecte', 'Normal', 'Electrik', 'Poison', 'Fée', 'Vol'];
+  }
 }
