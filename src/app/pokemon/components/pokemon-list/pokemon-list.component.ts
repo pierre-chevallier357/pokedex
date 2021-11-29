@@ -19,7 +19,7 @@ export class PokemonListComponent implements OnInit {
   }
 
   selectPokemon(pokemon: Pokemon) {
-    let pokemonUrl = ['/pokemon', pokemon.id];
+    let pokemonUrl = ['/pokemons', pokemon.id];
     this.router.navigate(pokemonUrl);
   }
 }

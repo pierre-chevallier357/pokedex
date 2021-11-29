@@ -1,14 +1,17 @@
-import { PokemonDetailsComponent } from './pokemon/components/pokemon-details/pokemon-details.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { PokemonListComponent } from './pokemon/components/pokemon-list/pokemon-list.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 const appRoutes: Routes = [
-  //{ path: 'pokemon', loadChildren: () => import('./pokemon/pokemon.module').then((m) => m.PokemonModule) },
-  { path: 'pokemon/:id', component: PokemonDetailsComponent },
-  { path: '', component: PokemonListComponent },
-  { path: '**', component: PageNotFoundComponent },
+  {
+    path: 'pokemons',
+    loadChildren: () => import('./pokemon/pokemon.module').then((m) => m.PokemonModule),
+  },
+  { path: '', redirectTo: '/pokemons', pathMatch: 'full' },
+  {
+    path: '**',
+    component: PageNotFoundComponent,
+  },
 ];
 
 @NgModule({
