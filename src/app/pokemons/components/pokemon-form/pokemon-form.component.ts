@@ -52,4 +52,20 @@ export class PokemonFormComponent implements OnInit {
     let link = ['/pokemons', this.pokemon.id];
     this.router.navigate(link);
   }
+
+  /*
+  // API version but API doesn't work
+
+  onSubmit(): void {
+    console.log('Submit form !');
+    this.pokemonsService.updatePokemon(this.pokemon).subscribe(
+      () => this.goBack();
+    );
+  }
+
+  goBack(): void {
+    let link = ['/pokemons', this.pokemon.id];
+    this.router.navigate(link);
+  }
+  */
 }

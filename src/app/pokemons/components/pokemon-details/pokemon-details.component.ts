@@ -27,4 +27,12 @@ export class PokemonDetailsComponent implements OnInit {
     let url = ['/pokemons/edit', pokemon.id];
     this.router.navigate(url);
   }
+
+  /*
+  // API version but API doesn't work
+
+  deletePokemon(pokemon: Pokemon): void {
+    this.pokemonsService.deletePokemon(pokemon).subscribe(_ => this.goBack());
+  }
+  */
 }
