@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'pokedex-app',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+	selector: 'pokemon-app',
+	templateUrl: './app/app.component.html'
 })
-export class AppComponent {}
+export class AppComponent { }

@@ -1,21 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { PageNotFoundComponent } from './page-not-found.component';
 
+// routes
 const appRoutes: Routes = [
-  {
-    path: 'pokemons',
-    loadChildren: () => import('./pokemons/pokemons.module').then((m) => m.PokemonModule),
-  },
-  { path: '', redirectTo: '/pokemons', pathMatch: 'full' },
-  {
-    path: '**',
-    component: PageNotFoundComponent,
-  },
+	{ path: '', redirectTo: 'pokemon/list', pathMatch: 'full' },
+	{ path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(appRoutes)],
-  exports: [RouterModule],
+	imports: [
+		RouterModule.forRoot(appRoutes)
+	],
+	exports: [
+		RouterModule
+	]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
